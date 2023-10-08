@@ -19,7 +19,7 @@ switchBtn.addEventListener("click", async () => {
         darkreader.disable();
         cookieStore.set('useDarkTheme', false)
     }
-    toggle = !toggle;
+    toggle = true;
 });
 
 
