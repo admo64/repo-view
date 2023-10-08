@@ -13,7 +13,7 @@ switchBtn.addEventListener("click", async () => {
     if(toggle){
         animate.restart();
         darkreader.enable();
-        cookieStore.set('useDarkTheme', false)
+        cookieStore.set('useDarkTheme', true)
     } else {
         animate.reverse();
         darkreader.disable();
@@ -27,7 +27,7 @@ switchBtn.addEventListener("click", async () => {
 
 if (window.useDarkTheme) {
     switchBtn.click();
-    delete window.useDarkTheme;
+    //delete window.useDarkTheme;
 }
 
 // switchBtn.addEventListener('load',
