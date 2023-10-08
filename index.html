@@ -9,33 +9,9 @@
 <!--         <link rel="stylesheet" href="css/prism-line-numbers.css" data-noprefix /> -->
 <!--         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css"> -->
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/theme-switch.css">
         <link rel="stylesheet" href="css/main.css">
-<!--         <meta name="darkreader" content="NO-DARKREADER-PLUGIN" /> -->
-        <script src="js/darkreader.min.js"></script>
-<!--         <script src="js/nodarkreader.min.js"></script> -->
         <link rel="icon" href="asset/favicon.svg">
         <title>RepoView</title>
-        <script type="text/javascript">
-            // setup darkTheme before anything
-            (async () => {
-                var useDarkThemeCookie = await cookieStore.get('useDarkTheme');
-                if (useDarkThemeCookie) {
-                    window.useDarkTheme = JSON.parse(useDarkThemeCookie.value);
-                } else {
-                    if (window.matchMedia) {
-                        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                            useDarkTheme = true;
-                        } else {
-                            useDarkTheme = false;
-                        }
-                    } else {
-                        useDarkTheme = false; // default is dark 🤓
-                    }
-                }
-                useDarkTheme ? darkreader.enable() : darkreader.disable();
-            })();
-        </script>
     </head>
     <body>
         <include-html src="widgets/theme-switch.html"></include-html>
